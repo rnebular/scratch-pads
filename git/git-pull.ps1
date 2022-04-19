@@ -3,7 +3,6 @@
 function Pull-GitFolders {
     # git pull for every sub-folder of current location
     $start_location = Get-location
-
     $subfolders = Get-ChildItem -Directory
 
     foreach ($folder in $subfolders) {
@@ -31,6 +30,5 @@ function Pull-GitFolders {
         Set-Location $start_location
     }
 }
-
 
 # end of line
